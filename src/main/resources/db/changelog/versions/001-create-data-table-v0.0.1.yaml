@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - preConditions:
+      - runningAs:
+          username: postgres
+
+  - changeSet:
+      id: 001v0.0.1
+      author: github.com/CyJay96
+      comment: Create DATA table
+      changes:
+        - createTable:
+            tableName: data
+            columns:
+              - column:
+                  name: id
+                  type: int8
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: title
+                  type: varchar(255)
+
+              - column:
+                  name: field
+                  type: varchar(255)

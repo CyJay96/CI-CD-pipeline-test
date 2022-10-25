@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002v0.0.1-1
+      author: github.com/CyJay96
+      context: test
+      changes:
+        - sql:
+            INSERT INTO data (title, field)
+            VALUES ('test title', 'test field');

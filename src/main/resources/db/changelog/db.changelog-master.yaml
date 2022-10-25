@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include: # Create SEQUENCE
+      file: db/changelog/versions/000-create-sequence-v0.0.1.yaml
+  - include: # Create DATA table
+      file: db/changelog/versions/001-create-data-table-v0.0.1.yaml
+  - include: # Insert test data
+      file: db/changelog/versions/002-insert-test-data-v0.0.1.yaml
