@@ -23,4 +23,14 @@ after_success:
 
 after_failure:
 
-
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  region: eu-central-1
+  app: konstantin-pipeline-test
+  env: Konstantinpipelinetest-env
+  bucket_name: elasticbeanstalk-eu-central-1-953923509938
+  bucket_path: konstantin-pipeline-test
+  on:
+    branch: main
