@@ -54,8 +54,8 @@
       "essential": true,
       "portMappings": [
         {
-          "containerPort": 5050,
-          "hostPort": 5050
+          "containerPort": -5050,
+          "hostPort": 80
         }
       ],
       "environment": [
