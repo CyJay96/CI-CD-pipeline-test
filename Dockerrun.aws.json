@@ -50,6 +50,9 @@
     },
     {
       "name": "pgadmin",
+      "links": [
+        "postgres"
+      ],
       "image": "dpage/pgadmin4",
       "essential": true,
       "portMappings": [
