@@ -1,5 +1,5 @@
 {
-  "AWSEBDockerrunVersion": 1,
+  "AWSEBDockerrunVersion": "2",
   "containerDefinitions": [
     {
       "name": "pipeline-test",
@@ -7,7 +7,7 @@
         "postgres"
       ],
       "image": "cyjay96/pipeline-test",
-      "essential": false,
+      "essential": true,
       "portMappings": [
         {
           "containerPort": 8080,
@@ -20,7 +20,7 @@
           "value": "jdbc:postgresql://postgres:5432/pipeline_test_db"
         }
       ],
-      "memory": 500
+      "memory": 512
     },
     {
       "name": "postgres",
@@ -40,7 +40,7 @@
           "value": "pipeline_test_db"
         }
       ],
-      "memory": 500
+      "memory": 512
     }
   ]
 }
