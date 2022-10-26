@@ -41,6 +41,22 @@
         }
       ],
       "memory": 512
+    },
+    {
+      "name": "pgadmin",
+      "image": "dpage/pgadmin4",
+      "essential": true,
+      "environment": [
+        {
+          "name": "PGADMIN_DEFAULT_EMAIL",
+          "value": "-admin@admin.org"
+        },
+        {
+          "name": "PGADMIN_DEFAULT_PASSWORD",
+          "value": "-admin"
+        }
+      ],
+      "memory": 512
     }
   ]
 }
