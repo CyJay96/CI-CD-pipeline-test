@@ -14,3 +14,4 @@ COPY ${JAR_FILE} /app/app.jar
 
 #CMD ./wait && java -jar /app/app.jar
 ENTRYPOINT ["java","-jar","/app/app.jar"]
+
