@@ -10,13 +10,13 @@ services:
       - "8080:8080"
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/pipeline_test_db
-    links:
-      - postgres
+#    links:
+#      - postgres
 #    depends_on:
 #      - postgres
-#    networks:
-#      - postgres-network
-#    restart: unless-stopped
+    networks:
+      - postgres-network
+    restart: unless-stopped
 
   postgres:
     image: postgres:13.5
@@ -26,9 +26,9 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: pipeline_test_db
-#    networks:
-#      - postgres-network
-#    restart: unless-stopped
+    networks:
+      - postgres-network
+    restart: unless-stopped
 
 #  pgadmin:
 #    image: dpage/pgadmin4
@@ -43,5 +43,5 @@ services:
 #      - postgres-network
 #    restart: unless-stopped
 
-#networks:
-#  postgres-network:
+networks:
+  postgres-network:
