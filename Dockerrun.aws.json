@@ -26,6 +26,12 @@
       "name": "postgres",
       "image": "postgres:13.5",
       "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5432,
+          "hostPort": 5432
+        }
+      ],
       "environment": [
         {
           "name": "POSTGRES_USER",
@@ -46,6 +52,12 @@
       "name": "pgadmin",
       "image": "dpage/pgadmin4",
       "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5050,
+          "hostPort": 5050
+        }
+      ],
       "environment": [
         {
           "name": "PGADMIN_DEFAULT_EMAIL",
