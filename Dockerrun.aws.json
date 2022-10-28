@@ -57,18 +57,18 @@
       "essential": true,
       "portMappings": [
         {
-          "containerPort": -5050,
+          "containerPort": 5050,
           "hostPort": 80
         }
       ],
       "environment": [
         {
           "name": "PGADMIN_DEFAULT_EMAIL",
-          "value": "-admin@admin.org"
+          "value": "admin@admin.org"
         },
         {
           "name": "PGADMIN_DEFAULT_PASSWORD",
-          "value": "-admin"
+          "value": "admin"
         }
       ],
       "memory": 512
