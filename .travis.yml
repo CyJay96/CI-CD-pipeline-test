@@ -28,9 +28,9 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: eu-central-1
-  app: cyjay96-pipeline-test
-  env: Cyjay96pipelinetest-env
+  app: konstantin-pipeline-test
+  env: Konstantinpipelinetest-env
   bucket_name: elasticbeanstalk-eu-central-1-953923509938
-  bucket_path: cyjay96-pipeline-test
+  bucket_path: konstantin-pipeline-test
   on:
     branch: main
