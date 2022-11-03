@@ -34,3 +34,4 @@ deploy:
   bucket_path: konstantin-pipeline-test
   on:
     branch: main
+
